@@ -8,9 +8,11 @@ const Login = () => {
   const [userval, setUserval] = useState("");
   const [passval, setPassval] = useState("");
 
+  
+
   const handlesubmit =(e) =>{
     e.preventDefault();
-    <Link to='/AllCourses'> courses</Link> 
+    
 
   }
    
@@ -26,7 +28,11 @@ const Login = () => {
                         
                    <label htmlFor ="pwd"> Password</label>
                         <input placeholder='Enter password' type="password" value={passval} onChange={(e)=>{setPassval(e.target.value)}}    id="pwd"/>
-                        <button type="submit"  id="sub_button">Login</button>
+                        <button type="submit"  id="sub_button">Dummy Login</button>
+                                <div className="footer">
+                  <h4><Link to='/AllCourses'>Login Link</Link> </h4>
+                </div>
+
                  </form>
                </div>
                <div className="right-side"></div>
