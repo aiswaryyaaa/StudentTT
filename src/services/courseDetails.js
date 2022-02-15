@@ -36,13 +36,6 @@ const courses =[
 ];
 
 
-
-
 export function getCourses() {
     return courses;
 }
-
-export function getMyCourses() {
-    return myCourses;
-}
-

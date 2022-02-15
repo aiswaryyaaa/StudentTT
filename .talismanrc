@@ -1,18 +1,10 @@
 scopeconfig:
-    - scope: node
+  - scope: node
 fileignoreconfig:
-- filename: package-lock.json
-  checksum: e9403e5b739a01766a740238db4c68111f16730014e6dd7173962788fb6a0d86
+- filename: public/index.html
+  checksum: 969624b748cb92c3bd2195c61a9c311519331918fd8be7c21d50f8955b7e816c
 - filename: src/components/Register/Register.js
-  checksum: a06e0fd905f792023514687a71fe94605c29d61183291d40d8f56c9107547055
+  checksum: 77e33d8b180fc07638f9d4687dcffb3f4ef806662ae8c98f391df43b018a21a5
 - filename: src/components/Login/Login.js
-  checksum: 2603f33cf17b911491afd05b7cd315ad5bc96600b66a2d5780163b9949bd5bd8
-- filename: src/components/course/TableBody.js
-  checksum: bd8e56c1d5d5c57efde25ece64860a163431280268352c73aaa3656e9127c863
-- filename: src/components/course/CourseTable.js
-  checksum: 06b078f80baf416a3ff15be6244601bffdebc4acad1b4c887af0183bfbdd4d16
-- filename: src/components/course/AllCourses.jsx
-  checksum: 78727c45c825406125d459166a09c4b18aa1762e982f1599b35793972bb6679b
-- filename: src/components/course/MyCourses.jsx
-  checksum: 09d2ce9982bbf984110440851c6cc2f277f2c3f3472e1c6cdb804bb529a46f26
+  checksum: 6fc782245ad1de52d2c50489a1b7f20780bc6a96c9e4c468da4769bfbfc23430
 version: ""
