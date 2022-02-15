@@ -13,7 +13,7 @@ const Login = () => {
 
   const handlesubmit =(e) =>{
     e.preventDefault();
-    navigate('/AllCourses');
+    navigate('/Coursemain');
   }
 
   return (

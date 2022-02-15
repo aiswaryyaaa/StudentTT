@@ -1,19 +1,14 @@
 import React, { Component } from "react";
 import { getCourses } from "../../services/courseDetails";
-import {Link} from 'react-router-dom';
 
-class MyCourses extends Component {
 
-	state={
-		courses : getCourses(),
+const MyCourses=({allcourses, onUnEnroll}) => {
+
+	const handleEnroll = (course) =>{
+		onUnEnroll(course);
 	};
 
-	handleEnroll = (course) =>{
-		console.log(course._id);
-	};
-
-	render(){
-		return (
+	return (
 		<>
 		<table className="table">
 			<thead>
@@ -26,20 +21,18 @@ class MyCourses extends Component {
 				</tr>
 			</thead>
 			<tbody>
-				{this.state.courses.map(course=>(
-					<tr key={course._id}>
+				{allcourses.map(course=>(course.enroll ===true? 
+					(<tr key={course._id}>
 						<td>{course.name}</td>
 						<td>{course.id}</td>
 						<td>{course.teacher}</td>
 						<td>{course.time}</td>
-						<td><button onClick={()=>this.handleEnroll(course)} className="btn btn-sm">Enroll/Unenroll</button></td>
-					</tr>
+						<td><button onClick={()=>handleEnroll(course)} className="btn btn-sm">Unenroll</button></td>
+					</tr>): null
 				))}
 			</tbody>
 		</table>
 	  </>);
-
-	}
 }
 
 export default MyCourses;

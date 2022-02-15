@@ -7,4 +7,8 @@ fileignoreconfig:
   checksum: 77e33d8b180fc07638f9d4687dcffb3f4ef806662ae8c98f391df43b018a21a5
 - filename: src/components/Login/Login.js
   checksum: 6fc782245ad1de52d2c50489a1b7f20780bc6a96c9e4c468da4769bfbfc23430
+- filename: src/components/course/CourseTable.js
+  checksum: 78c2560f7465eb048f9b94a50afaa9ed75541eea13e936db8da958db1d63ad40
+- filename: src/components/course/AllCourses.js
+  checksum: d6ec51e7adead2424a672ed96b7f5d3b6983c1f5669f004b922f2f764b8f298e
 version: ""
