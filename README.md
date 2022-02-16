@@ -1,3 +1,9 @@
+installing two packages - 
+
+bootstrap : npm install react-bootstrap bootstrap@5.1.3
+
+daypilot : npm i @daypilot/daypilot-lite-react
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

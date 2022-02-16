@@ -11,6 +11,8 @@ import AllCourses from './AllCourses';
 import MyCourses from './MyCourses';
 import Timetable from './Timetable';
 import { getCourses } from "../../services/courseDetails";
+import Calendar from "../calendar/Calendar";
+
 
 const CourseMain = () => {
 
@@ -48,7 +50,6 @@ const CourseMain = () => {
       console.log("updatedCourse",updatedCourse);
 
       setcourses(updatedCourse);
-      //console.log("updated",courses);
     }
 
     const hideComponent = (name1)=>{
@@ -92,7 +93,7 @@ const CourseMain = () => {
       <div>
         {allCourses && <AllCourses allcourses={courses} onEnroll={onEnroll}/>}
         {myCourses && <MyCourses allcourses={courses} onUnEnroll={onUnEnroll}/>}
-        {timetable && <Timetable />}
+        {timetable && <Calendar/>}
       </div>
       </>
     );
